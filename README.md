@@ -2,11 +2,9 @@
 
 Dockerfile that builds and runs s3fs via Fuse
 
-## Why does this exist?
-
-
 ## Usage
 
+```
 $ sudo docker run -d --rm \
 	--name s3fs \
 	--cap-add mknod \
@@ -16,8 +14,8 @@ $ sudo docker run -d --rm \
 	-e S3_REGION=MY_S3_REGION \
  	-e MNT_POINT=/data \
 	quay.io/jfryman/docker-s3fs:latest
+```
 
 ## Contributors
 
 * Igor Cicimov <igorc@encompasscorporation.com>
-  - Project based originally on his work
